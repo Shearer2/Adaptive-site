@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__contacts">
+                    <a class="header__phone" href="tel:88005553535">8 800 555 35 35</a>
+                    <a class="header__email" href="#">yourmail@gmail.com</a>
+                    <a class="header__nikname" href="#">имя пользователя</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="img/logo1.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <div class="header__btn-menu">
+                            <span class="icon-bars"></span>
+                        </div>
+                        <ul>
+                            <li><a href="home.html">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="advantages">
+        <div class="container1">
+            <div class="advantages__inner">
+                <div class="advantages-item1">
+                    <div class="wrapper">
+                        <div class="menu1">
+                            <div class="menu1-btn">
+                                <span class="icon-bars"></span>
+                            </div>
+                            <nav class="menu1-list">
+                                <a class="menu1__nikname" href="profile.html">Профиль</a>
+                                <button class="dropdown-btn" href="#">
+                                    Отдел
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-container">
+                                    <a class="menu1__tasks" href="tasks.html">Задачи</a>
+                                    <a class="menu1__events" href="events.html">Лента событий</a>
+                                    <a class="menu1__paty" href="employees.html">Участники</a>
+                                    <a class="menu1__updates" href="update.html">Обновления</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-item2">
+                    <div class="task__item">
+                        <div class="task__item-title1">
+                            Профиль
+                            <div class="task__item-btn">
+                                <a href="home.html">
+                                    Выход из аккаунта
+                                </a>
+                            </div>
+                        </div>
+                        <div class="task__item-text">
+                            <div class="form1">
+                                <div class="task__text1">
+                                    <div class="avatar">
+                                        
+                                    </div>
+                                    <div class="dowdel">
+                                        <div class="download">
+                                            <a href="#">Загрузить фото</a>
+                                        </div>
+                                        <div class="delete">
+                                            <a href="#">Удалить фото</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form2">
+                                <div class="search__container">
+                                    <input class="search" type="text">
+                                </div>
+                            </div>
+                            <div class="form3">
+                                <div class="task__text2">
+                                    <div class="password">
+                                        <a data-fancybox data-src="#modal__password" href="javascript:;"
+                                            class="default-btn">
+                                            Поменять пароль
+                                        </a>
+                                    </div>
+                                    <div class="e-mail">
+                                        <a data-fancybox data-src="#modal__e-mail" href="javascript:;"
+                                            class="default-btn">
+                                            Поменять e-mail
+                                        </a>
+                                    </div>
+                                    <div class="notification">
+                                        <a href="#">Настройка оповещений</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-item3">
+                    <div class="wrapper">
+                        <div class="menu2">
+                            <div class="menu2-btn">
+                                <span class="icon-bars"></span>
+                            </div>
+                            <nav class="menu2-list">
+                                <a class="menu2__chats" href="#">Чаты</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="modal__password">
+        <form>
+            <input type="text" placeholder="Текущий пароль">
+            <input type="text" placeholder="Новый пароль">
+            <input type="text" placeholder="Повторите пароль">
+            <input type="submit" value="Поменять пароль">
+        </form>
+    </div>
+    <div id="modal__e-mail">
+        <form>
+            <input type="text" placeholder="Введите новый e-mail">
+            <input type="text" placeholder="Введите текущий пароль">
+            <input type="submit" value="Поменять e-mail">
+        </form>
+    </div>
+
+
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+
+</body>
+
+</html>
